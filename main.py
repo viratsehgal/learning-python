@@ -1,12 +1,13 @@
-import math
-def calculate_area(radius):
-    area = math.pi * radius ** 2
-    return area 
-def calculate_circumference(radius):
-    circumference = 2 * math.pi * radius
-    return circumference
-radius = float(input("Enter the radius of the circle: "))
-area = calculate_area(radius)
-circumference = calculate_circumference(radius)
-print("The area of the circle with radius " , radius , "is" , area)
-print("The circumference of the circle with radius " , radius , "is" , circumference)
+def temperature_converter(celsius):
+    fahrenheit = (celsius * 9/5) + 32
+    return fahrenheit 
+
+def temperature_converter_k(celsius):
+    kelvin = celsius + 273.15
+    return kelvin
+
+celsius_input = float(input("Enter the temperature in celsius: "))
+fahrenheit_output = temperature_converter(celsius_input)
+kelvin_output = temperature_converter_k(celsius_input)
+print("The temperature in fahrenheit is :" , fahrenheit_output)
+print("The temperature in kelvin is :" , kelvin_output)
