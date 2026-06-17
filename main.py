@@ -1,13 +1,20 @@
-def temperature_converter(celsius):
-    fahrenheit = (celsius * 9/5) + 32
-    return fahrenheit 
+import math
 
-def temperature_converter_k(celsius):
-    kelvin = celsius + 273.15
-    return kelvin
-
-celsius_input = float(input("Enter the temperature in celsius: "))
-fahrenheit_output = temperature_converter(celsius_input)
-kelvin_output = temperature_converter_k(celsius_input)
-print("The temperature in fahrenheit is :" , fahrenheit_output)
-print("The temperature in kelvin is :" , kelvin_output)
+number_input = (float(input("Enter a number: ")))
+if number_input > 0:
+    square_root = math.sqrt(number_input)
+    square = number_input ** 2
+    cube = number_input ** 3
+    print("The square root of the given number is " , square_root)
+    print("The square of the given number is " , square)
+    print("The cube of the given number is " , cube)
+elif number_input == 0:
+    print("Null")
+elif number_input < 0:
+    number_input = abs(number_input)
+    square_root = math.sqrt(number_input)
+    square = number_input ** 2
+    cube = number_input ** 3
+    print("The square root of the given number is " , square_root , "when number is converted into a positive")
+    print("The square of the given number is " , square , "when number is converted into a positive")
+    print("The cube of the given number is " , cube , "when number is converted into a positive")
