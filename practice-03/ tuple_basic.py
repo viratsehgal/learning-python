@@ -4,4 +4,4 @@ print(countries[0])
 print(countries[-1])      
 print(len(countries))
 
-countries[0] = "Italy"
+countries[0] = "Italy"      # because tuples aren't mutable
